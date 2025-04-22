@@ -50,14 +50,27 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+body::-webkit-scrollbar {
+  width: 7.5px;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--clr-light);
+}
+
 header {
+  position: sticky;
+  top: 0;
   min-height: 100px;
 }
 
 main {
   min-height: 100dvh;
 }
-
 
 #scroll_up--container {
   position: fixed;
@@ -67,8 +80,8 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
-  border: 3px solid var(--clr-light);
-  opacity: 1;
+  border: 3px solid var(--clr-main);
+  opacity: 0;
   margin-right: 10px;
   margin-bottom: 10px;
   height: 45px;
@@ -78,29 +91,37 @@ main {
   transition: all 0.3s;
 }
 
-#scroll_up--container:hover,
+#scroll_up--container:hover {
+  background: var(--clr-main);
+  transition: all 0.3s;
+}
+
 #scroll_up--container:active,
 #scroll_up--container:focus {
   border: 3px solid var(--clr-main);
-  background: var(--clr-main);
-  cursor: pointer;
+  background: transparent;
   transition: all 0.3s;
 }
 
 #scroll_up--button {
-  color: var(--clr-light);
+  color: var(--clr-main);
   text-decoration: none;
   font-size: 2rem;
   transition: all 0.3s;
+}
+
+#scroll_up--container:hover #scroll_up--button {
+  color: var(--clr-light);
 }
 
 .navbar {
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
   margin-left: 5rem;
   margin-right: 5rem;
-  justify-content: space-evenly;
+  gap: 25px;
 }
 
 .nav_list {
@@ -113,13 +134,27 @@ main {
 
 .nav_logo {
   margin-right: auto;
+  text-decoration: none;
+  font-weight: bold;
   font-size: 2.5rem;
   color: var(--clr-main);
+  transition: all 1s;
 }
 
 .nav_logo span {
   margin-right: auto;
   color: var(--clr-light);
+  transition: all 1s;
+}
+
+.nav_logo:hover {
+  color: var(--clr-light);
+  transition: all 0.7s;
+}
+
+.nav_logo:hover span {
+  color: var(--clr-main);
+  transition: all 0.7s;
 }
 
 .nav_list li a {
@@ -152,17 +187,17 @@ main {
   color: var(--clr-main);
 }
 
-.contact_btn {
+.github_btn {
   border: 2px solid var(--clr-main);
   color: var(--clr-main);
-  padding: 3px 12px 3px 12px;
+  padding: 3px 25px 3px 25px;
   border-radius: 5px;
-  margin-left: 25px;
+  margin-left: 2.5px;
   transition: all 0.35s;
   text-decoration: none;
 }
 
-.contact_btn:hover {
+.github_btn:hover {
   background: var(--clr-main);
   color: var(--clr-light);
   transition: all 0.35s;
@@ -222,7 +257,7 @@ main {
     display: none;
   }
 
-  .hamburger{
+  .hamburger {
     display: flex;
   }
 }
