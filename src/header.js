@@ -18,6 +18,11 @@ fetch(jsonFile)
           <li><a href="#" aria-label="Experience Section">${Experience}</a></li>
         </ul>
         <a class="contact_btn" href="#" aria-label="Contact Me">Contact Me</a>
+        <div class="hamburger" id="hamburger" aria-label="open menu" aria-controls="menu" aria-expanded="false"role="button">
+          <div class="nav_bar"></div>
+          <div class="nav_bar"></div>
+          <div class="nav_bar"></div>
+        </div>
       </nav>
         `;
     });

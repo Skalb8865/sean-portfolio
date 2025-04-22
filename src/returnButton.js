@@ -1,4 +1,4 @@
-const scrollUpButton = document.getElementById("scroll_up--button");
+const scrollUpButton = document.getElementById("scroll_up--container");
 
 window.addEventListener("scroll", () => {
     if (window.scrollY > 75) {
