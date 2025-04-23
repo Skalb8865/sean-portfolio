@@ -30,9 +30,11 @@
 const navbar = document.querySelector("header");
 
 window.addEventListener("scroll", () => {
-    if (window.scrollY > 75) {
-      navbar.style.background = "rgba(0, 0, 0, 0.75)";
-    } else {
-      navbar.style.background = "transparent";
-    }
+  if (window.scrollY > 0.5) {
+    navbar.style.background = "rgba(0, 0, 0, 0.25)";
+  } else {
+    navbar.style.background = "#030303";
+    navbar.style.backgroundImage = "radial-gradient(#838383 1px, transparent 1px)"
+    navbar.style.backgroundSize = "20px 20px"
+  }
 });
