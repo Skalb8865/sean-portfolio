@@ -29,7 +29,8 @@
   <meta property="og:image" content="https://seankalb.vercel.app/sk_logo_greenbg.svg">
   <meta property="og:url" content="https://seankalb.vercel.app/">
   <meta name="author" content="Sean Kalb">
-  <meta property="keywords" content="html, css, js, website, Sean Kalb, Portfolio, 2025, frontend developer, backend developer, vercel, vite">
+  <meta property="keywords"
+    content="html, css, js, website, Sean Kalb, Portfolio, 2025, frontend developer, backend developer, vercel, vite">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Seans Portfolio">
   <meta name="twitter:description" content="">
@@ -41,14 +42,29 @@
     <a id="scroll_up--button" href="#top" aria-label="Scroll to Top"><i class="ri-arrow-up-line"></i></a>
   </div>
   <header>
-    <!-- Header Loaded Here -->
+    <nav class="navbar">
+      <a class="navbar_logo" href="/index.html">
+        <img src="/sk_logo.svg" alt="Logo">
+      </a>
+      <a href="#top" class="nav_logo active"><i class="ri-home-4-line"></i> Home</a>
+      <ul class="nav_list">
+        <li><a href="#projects_section" aria-label="Projects Section"><i class="ri-briefcase-4-line"></i>
+            Projects</a></li>
+        <li><a href="#education_section" aria-label="Education Section"><i class="ri-school-line"></i> Education</a>
+        </li>
+        <li><a href="#expireince_section" aria-label="Experience Section"><i class="ri-building-4-line"></i>
+            Experience</a></li>
+      </ul>
+      <div id="hamburger_icon" class="ri-menu-line" role="button"></div>
+    </nav>
   </header>
   <main>
     <div id="about_section">
       <div class="about_container">
-        <p class="about_intro"><span>👋</span> Hello, my name is</p>
+        <p class="about_greet"><span>👋</span> Hello, my name is</p>
         <p class="about_name">Sean Kalb</p>
         <p class="about_job">Im a <span>Frontend Developer</span></p>
+        <p class="about_location"><span>📍</span> Columbus, Ohio</p>
         <div class="social_icons">
           <a href="#">
             <div class="icon_circle">
