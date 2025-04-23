@@ -63,7 +63,7 @@ body {
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
-.autoHide.visible {
+.visible {
   opacity: 1;
   transform: translateY(0);
 }
