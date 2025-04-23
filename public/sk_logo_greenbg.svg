@@ -1,0 +1,23 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="512" height="512">
+	<title>New Project</title>
+	<defs>
+		<image  width="400" height="400" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQAQMAAAC6caSPAAAAAXNSR0IB2cksfwAAAANQTFRF////p8QbyAAAAFZJREFUeJztyzENAAAMA6DVv+lp6NvAT64WRVEURVEURVEURVEURVEURVEURVEURVEURVEURVEURVEURVEURVEURVEURVEURVEURVEURVEURVEURVkvD7yqAZFFhyovAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre } 
+		.t0 { font-size: 164px;fill: #ffffff;font-weight: 400;font-family: "Poppins-Regular", "Poppins" } 
+		.t1 { font-size: 124px;fill: #ffffff;font-weight: 400;font-family: "Poppins-Regular", "Poppins" } 
+		.t2 { font-size: 140px;fill: #ffffff;font-weight: 400;font-family: "Poppins-Regular", "Poppins" } 
+	</style>
+	<use id="Background" href="#img1" x="0" y="0"/>
+	<rect width="400" height="400" id="Color Fill 1" style="fill: #00ff30"/>
+	<rect width="400" height="400" id="Color Fill 2" style="fill: #16ff00"/>
+	<text id="K " style="transform: matrix(1,0,0,1,188,285)" >
+		<tspan x="0" y="0" class="t0">K</tspan><tspan  y="0" class="t1">
+</tspan>
+	</text>
+	<text id="S " style="transform: matrix(1,0,0,1,113,250)" >
+		<tspan x="0" y="0" class="t0">S</tspan><tspan  y="0" class="t2">
+</tspan>
+	</text>
+</svg>
