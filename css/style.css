@@ -45,7 +45,7 @@
 body {
   background-color: #030303;
   background-image: radial-gradient(#838383 1px, transparent 1px);
-  background-size: 20px 20px;
+  background-size: 27px 25px;
   /* light mode */
   /* background-color: #ffffff;
   background-image: radial-gradient(#000000 1px, transparent 1px);
@@ -88,11 +88,8 @@ header {
   align-items: center;
   min-height: 100px;
   z-index: 9999;
-  backdrop-filter: blur(5px);
-  transition: all 0.3s ease;
-  background-color: #030303;
-  background-image: radial-gradient(#838383 1px, transparent 1px);
-  background-size: 20px 20px;
+  transition: all 0.75s ease;
+  border-radius: 25px;
 }
 
 main {
@@ -285,7 +282,7 @@ main {
 
 .about_greet span {
   display: inline-block;
-  font-size: 2rem;
+  font-size: 1.75rem;
   cursor: default;
   transition: transform 1s;
 }
@@ -339,7 +336,7 @@ main {
 
 .about_location {
   color: var(--clr-grey);
-  font-size: 1.75rem;
+  font-size: 1.25rem;
   font-weight: 700;
   margin-top: 15px;
   line-height: 1;
@@ -347,7 +344,7 @@ main {
 
 .about_location span {
   display: inline-block;
-  font-size: 2rem;
+  font-size: 1.25rem;
   cursor: default;
   transition: transform 1s;
 }
@@ -436,6 +433,7 @@ main {
 #expireince_section {
   width: 100%;
   min-height: 75dvh;
+  background: var(--clr-dark-grey);
 }
 
 /* Contact Section */
@@ -454,6 +452,7 @@ main {
   align-items: center;
   text-align: center;
   color: var(--clr-light);
+  background: var(--clr-dark-grey);
 }
 
 /* Responsive Section */

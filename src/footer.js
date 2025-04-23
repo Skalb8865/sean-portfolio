@@ -9,7 +9,7 @@ fetch(jsonFile)
             footerSelector.innerHTML += `
          <div class="footer_container">
           <p class="footer_text">${footer_text}</p>
-       </div>
+        </div>
         `;
         });
     });
