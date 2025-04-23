@@ -147,6 +147,7 @@ main {
   height: 65px;
   border-radius: 50%;
   background: var(--clr-main);
+  border: 2px solid var(--clr-light);
   object-fit: cover;
 }
 
