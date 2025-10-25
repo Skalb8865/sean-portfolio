@@ -16,10 +16,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css">
   </noscript>
 
+  <link rel="preload" href="https://api.fontshare.com/v2/css?f[]=general-sans@300,400,500,600,700&display=swap"
+    as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=general-sans@300,400,500,600,700&display=swap">
+  </noscript>
+
   <!-- ======== -->
   <!-- JS Links -->
   <!-- ======== -->
   <script type="module" src="./src/main.js"></script>
+  <script src="./src/dark_mode.js"></script>
   <script src="https://kit.fontawesome.com/c4fc73ac8f.js" crossorigin="anonymous"></script>
 
   <meta property="description" content="">
@@ -41,26 +48,39 @@
   <div id="scroll_up--container" role="button" inert>
     <a id="scroll_up--button" href="#home" aria-label="Scroll to Top"><i class="ri-arrow-up-line"></i></a>
   </div>
-  <header>
-    <nav class="navbar autoHide">
-      <a href="#home" class="nav_logo active"><i class="ri-home-4-line"></i> Home</a>
-      <ul class="nav_list">
-        <li><a href="#projects_section" aria-label="Projects Section"><i class="ri-briefcase-4-line"></i>
-            Projects</a></li>
-        <li><a href="#education_section" aria-label="Education Section"><i class="ri-school-line"></i> Education</a>
+
+  <header class="header container">
+    <nav>
+      <ul class="header_menu">
+        <li class="header_link">
+          <a href="#projects">Projects</a>
         </li>
-        <li><a href="#expireince_section" aria-label="Experience Section"><i class="ri-building-4-line"></i>
-            Experience</a></li>
+        <li class="header_link">
+          <a href="#experience">Experience</a>
+        </li>
+        <li class="header_line"></li>
+        <li>
+          <button onclick="myFunction()" class="header_sun">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+            </svg>
+          </button>
+        </li>
+        <li>
+          <a class="btn" href="#">Resume</a>
+        </li>
       </ul>
-      <div id="hamburger_icon" class="ri-menu-line" role="button"></div>
     </nav>
   </header>
+
   <main>
-    <div id="about_section">
-      <div class="about_container autoHide">
+    <div id="about_section" class="autoHide">
+      <div class="about_container">
         <p class="about_greet"><span>👋</span> Hello, my name is</p>
         <p class="about_name">Sean Kalb</p>
-        <p class="about_job">Im a <span>Frontend Developer</span></p>
+        <p class="about_job">Im a <span>IT Specialist</span></p>
         <p class="about_location"><span>📍</span> Columbus, OH</p>
         <div class="social_icons">
           <a href="#">
@@ -73,20 +93,21 @@
               <i class="icon fa-brands fa-github"></i>
             </div>
           </a>
-          <a href="#">
-            <div class="icon_circle">
-              <i class="icon fa-brands fa-instagram"></i>
-            </div>
-          </a>
-          <a href="#">
-            <div class="icon_circle">
-              <i class="icon fa-brands fa-facebook"></i>
-            </div>
-          </a>
         </div>
       </div>
+      <div>
+        <img src="/sk_logo.svg" alt=""
+          style="width: 300px; height: 300px; background: black; border-radius: 10px;">
+      </div>
     </div>
-    <div id="projects_section"></div>
+    <div id="projects_section">
+      <div class="temp_div">
+        First Box
+      </div>
+      <div class="temp_div">
+        <p>Second Box</p>
+      </div>
+    </div>
     <div id="education_section"></div>
     <div id="expireince_section"></div>
     <div id="contact_section"></div>
