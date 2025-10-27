@@ -1,4 +1,3 @@
-
 /* Global Styles */
 :root {
   /* Colors */
@@ -66,7 +65,7 @@
   scroll-behavior: smooth;
 }
 
-html{
+html {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
@@ -246,7 +245,7 @@ main {
   transition: background 0.3s;
 } */
 
-.hero_picture{
+.hero_picture {
   background: purple;
   border: 10px solid var(--clr-dark);
   border-radius: 50%;
@@ -255,12 +254,12 @@ main {
   object-fit: cover;
 }
 
-.hero_picture img{
+.hero_picture img {
   width: 100%;
   height: 100%;
 }
 
-.hero_text{
+.hero_text {
   display: flex;
   justify-content: flex-start;
   font-size: 3rem;
