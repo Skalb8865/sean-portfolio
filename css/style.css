@@ -87,9 +87,10 @@ button {
 }
 
 body {
-  background-color: var(--bg-color);
+  /* background-color: var(--bg-color);
   background-image: radial-gradient(var(--bg-dots) 1px, transparent 1px);
-  background-size: 30px 30px;
+  background-size: 30px 30px; */
+  background: var(--clr-light);
   /* light mode */
   /* background-color: #ffffff;
   background-image: radial-gradient(#000000 1px, transparent 1px);
@@ -233,7 +234,6 @@ main {
   align-items: center;
   flex-direction: column;
   min-height: 65dvh;
-  background: red;
   /* padding: 0 25px 0 25px; */
   border-radius: 20px;
   margin-top: 5rem;
@@ -250,8 +250,8 @@ main {
   background: purple;
   border: 10px solid var(--clr-dark);
   border-radius: 50%;
-  width: 400px;
-  height: 400px;
+  width: 425px;
+  height: 425px;
   object-fit: cover;
 }
 

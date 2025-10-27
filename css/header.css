@@ -29,30 +29,63 @@
 
 .header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
-    padding-top: 2rem;
+    padding-top: 5.9rem;
+    padding-left: 2.25rem;
     padding-bottom: 2rem;
+}
+
+.scroll_header {
+    background: var(--clr-main);
+    width: 100%;
+    height: 26.5px;
 }
 
 .header_menu {
     display: flex;
     align-items: center;
     padding: 0;
-    gap: 2em;
+    gap: 3em;
+}
+
+.header_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 800;
+    width: 68.25px;
+    margin-right: 10px;
+    height: 68.25px;
+    color: var(--clr-dark);
+    border: 5px solid var(--clr-dark);
+    border-radius: 0.375rem;
 }
 
 .header_link {
-    font-size: var(--size-lg);
-    font-weight: 600;
-    color: var(--clr-grey);
-    letter-spacing: -0.05em;
-    transition: color 0.3s;
+    position: relative;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 800;
+    letter-spacing: 0.075em;
+    color: var(--clr-dark);
+    padding-left: 5px;
+    padding-right: 5px;
+    z-index: 10;
+    background-image: linear-gradient(120deg, #35D399 0%, #35D399 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.25em;
+    background-position: 0 95%;
+    transition: all 0.2s ease-in;
 }
 
+
 .header_link:hover {
-    color: var(--clr-main);
-    transition: color 0.3s;
+    background-size: 100% 100%;
+    transition: all 0.2s ease-in;
 }
 
 .header_line {
